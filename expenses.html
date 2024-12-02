@@ -69,12 +69,21 @@
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Scan to Pay</h5>
+                    <h5 class="modal-title">Payment Details</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                 </div>
                 <div class="modal-body text-center">
+                    <div class="mb-3">
+                        <select id="payment-method" class="form-select">
+                            <option value="upi">UPI Payment</option>
+                            <option value="sui">SUI Transfer</option>
+                            <option value="okto">Okto Payment</option>
+                            <option value="base">Base Transfer</option>
+                        </select>
+                    </div>
                     <div id="qrcode" class="d-flex justify-content-center"></div>
                     <p id="payment-details" class="mt-3"></p>
+                    <div id="wallet-details" class="mt-3"></div>
                 </div>
             </div>
         </div>

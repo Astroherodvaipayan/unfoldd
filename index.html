@@ -16,11 +16,20 @@
         </div>
         <form id="group-form" class="mb-4">
             <div class="row g-3">
-                <div class="col-md-8">
+                <div class="col-md-6">
                     <input type="text" id="member-name" class="form-control" placeholder="Enter Member Name" required>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-6">
                     <input type="text" id="member-upi" class="form-control" placeholder="Enter UPI ID" required>
+                </div>
+                <div class="col-md-4">
+                    <input type="text" id="member-sui" class="form-control" placeholder="Enter SUI Address">
+                </div>
+                <div class="col-md-4">
+                    <input type="text" id="member-okto" class="form-control" placeholder="Enter Okto">
+                </div>
+                <div class="col-md-4">
+                    <input type="text" id="member-base" class="form-control" placeholder="Enter Base">
                 </div>
             </div>
             <button type="submit" class="btn btn-success mt-3 w-100">Add Member</button>
@@ -31,6 +40,9 @@
                 <tr>
                     <th>Name</th>
                     <th>UPI ID</th>
+                    <th>SUI Address</th>
+                    <th>Okto</th>
+                    <th>Base</th>
                 </tr>
             </thead>
             <tbody id="members-list">
